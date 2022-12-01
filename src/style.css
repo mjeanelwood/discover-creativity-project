@@ -10,12 +10,27 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 26px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.img-responsive {
+  max-width: 100%;
+  border-radius: 3px;
+}
+.grid-2-columns h3 {
+  margin-top: 0;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 75px 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -25,7 +40,6 @@ header {
   color: white;
   text-align: center;
   padding: 200px 0;
-  border-radius: 5px;
 }
 header h1 {
   font-weight: 600;
@@ -62,14 +76,19 @@ header a {
   background-color: #6643b5;
   color: white;
 }
+main {
+  background-color: whitesmoke;
+}
+main p {
+  line-height: 1.5;
+}
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 5px;
-  padding: 100px 0;
+
   color: white;
 }
 
@@ -113,6 +132,14 @@ footer li {
   header a {
     font-size: 10px;
     padding: 8px 16px;
+  }
+  section {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 13px;
   }
   footer {
     font-size: 10px;
