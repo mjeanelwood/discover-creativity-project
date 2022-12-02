@@ -24,15 +24,26 @@ body {
   border-radius: 4px;
 }
 .img-responsive-1,
-.img-responsive-3 {
+.img-responsive-3,
+.img-responsive-4 {
   max-width: 100%;
   display: block;
+}
+.img-responsive-4 {
+  border: 1px solid lightgray;
 }
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-4-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.gallery h2 {
+  margin-bottom: 20px;
 }
 
 .secondary {
@@ -191,6 +202,9 @@ footer li {
     grid-gap: 13px;
   }
   .embed {
+    display: none;
+  }
+  .gallery {
     display: none;
   }
   footer {
